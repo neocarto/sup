@@ -5,6 +5,7 @@ date: "22/06/2021"
 output: 
   ioslides_presentation: 
     widescreen: yes
+    self_contained : false
 ---
 
 
