@@ -52,7 +52,7 @@ mf_map(x = mtq, var = "MED", type = "choro",
        breaks = "q6", 
        nbreaks = 6, 
        leg_title = "Median Income\n(euros)", 
-       leg_val_rnd = 10,
+       leg_val_rnd = 1,
        add = TRUE)
 # Add an inset world map
 mf_inset_on(x = "worldmap", pos = "right")
