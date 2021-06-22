@@ -183,12 +183,11 @@ slide:not(.current) .plotly.html-widget{
 mtq &lt;- mf_get_mtq()
 # Start a map using a theme and extra margins 
 mf_init(x = mtq, theme = &quot;jsk&quot;)
-cat(&quot;xx&quot;)
 # Plot a shadow
 mf_shadow(mtq, col = &quot;grey10&quot;, add = TRUE)
 mf_map(mtq, add = TRUE)
 # Plot a prop symb map
-mf_map(x = mtq, var = &quot;POP&quot;, type = &quot;prop&quot;)
+mf_map(x = mtq, var = &quot;POP&quot;, type = &quot;prop&quot;, symbol = &quot;square&quot;)
 # Plot a layout elements
 mf_title(&quot;Population in Martinique, 2015&quot;)
 mf_credits(&quot;Sources: INSEE &amp; IGN, 2018&quot;)

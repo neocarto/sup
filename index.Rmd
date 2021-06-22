@@ -19,12 +19,11 @@ library(mapsf)
 mtq <- mf_get_mtq()
 # Start a map using a theme and extra margins 
 mf_init(x = mtq, theme = "jsk")
-cat("xx")
 # Plot a shadow
 mf_shadow(mtq, col = "grey10", add = TRUE)
 mf_map(mtq, add = TRUE)
 # Plot a prop symb map
-mf_map(x = mtq, var = "POP", type = "prop")
+mf_map(x = mtq, var = "POP", type = "prop", symbol = "square")
 # Plot a layout elements
 mf_title("Population in Martinique, 2015")
 mf_credits("Sources: INSEE & IGN, 2018")
